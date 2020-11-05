@@ -16,6 +16,7 @@ function parse(al){
         var hasScript = ietf.length === 3;
 
         return {
+            locale: bits[0],
             code: ietf[0],
             script: hasScript ? ietf[1] : null,
             region: hasScript ? ietf[2] : ietf[1],
